@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rice_Order__c</fullName>
+    <label>Rice Order</label>
+    <referenceTo>Rice_Order__c</referenceTo>
+    <relationshipLabel>Rice Order Vendors</relationshipLabel>
+    <relationshipName>Rice_Order_Vendors</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+    <deleteConstraint>Restrict</deleteConstraint>
+</CustomField>

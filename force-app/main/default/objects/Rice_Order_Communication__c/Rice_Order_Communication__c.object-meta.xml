@@ -43,23 +43,23 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Tracks simple rice shopping orders for the sample app.</description>
-    <enableActivities>true</enableActivities>
+    <description>Tracks customer and vendor communications for a rice order.</description>
+    <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Rice Order</label>
+    <label>Rice Order Communication</label>
     <nameField>
-        <label>Order Name</label>
+        <label>Communication Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Rice Orders</pluralLabel>
+    <pluralLabel>Rice Order Communications</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

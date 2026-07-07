@@ -34,6 +34,35 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <decisions>
+        <name>Has_Email_Address</name>
+        <label>Has Email Address</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <defaultConnectorLabel>No Email</defaultConnectorLabel>
+        <rules>
+            <name>Has_Email</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Customer_Email__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Customer_Email__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_Alert</targetReference>
+            </connector>
+            <label>Has Email</label>
+        </rules>
+    </decisions>
     <description>Sends a notification email when a rice order is created.</description>
     <interviewLabel>Rice Order Notification {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Rice Order Notification</label>
@@ -54,7 +83,7 @@
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Send_Email_Alert</targetReference>
+            <targetReference>Has_Email_Address</targetReference>
         </connector>
         <object>Rice_Order__c</object>
         <recordTriggerType>Create</recordTriggerType>
