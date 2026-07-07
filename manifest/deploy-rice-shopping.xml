@@ -7,10 +7,16 @@
     </types>
     <types>
         <members>Rice_Order__c</members>
+        <members>Rice_Order_Communication__c</members>
+        <members>Rice_Order_Vendor__c</members>
+        <members>Rice_Transport_Team__c</members>
         <name>CustomObject</name>
     </types>
     <types>
         <members>Rice_Order__c</members>
+        <members>Rice_Order_Communication__c</members>
+        <members>Rice_Order_Vendor__c</members>
+        <members>Rice_Transport_Team__c</members>
         <name>CustomTab</name>
     </types>
     <types>
